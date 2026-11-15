@@ -1,0 +1,52 @@
+<Layer Version = "0.0" Author = "DXL44" LoadCommand = "%xero(function(self)
+
+    function actormods(a)
+    
+    local definedActor=a[1] 
+    local definedActorName =a[2]
+
+
+
+	-- Zoom
+	definemod {definedActorName..'_zoom', function(p)
+		 definedActor:zoom(p*0.01)
+	end}
+
+	-- Zoom X
+	definemod {definedActorName..'_zoomx', function(p)
+		 definedActor:zoomx(p*0.01)
+	end}
+
+	-- Zoom Y
+	definemod {definedActorName..'_zoomy', function(p)
+		 definedActor:zoomy(p*0.01)
+	end}
+
+	-- Skew X
+	definemod {definedActorName..'_skewx', function(p)
+		 definedActor:skewx(p*0.01)
+	end}
+
+	-- Skew Y
+	definemod {definedActorName..'_skewy', function(p)
+		 definedActor:skewy(p*0.01)
+	end}
+
+	-- Move X
+	definemod {definedActorName..'_movex', function(p)
+		    definedActor:x(SCREEN_CENTER_X+p)
+	end}	
+
+		-- Move Y
+	definemod {definedActorName..'_movey', function(p)
+		    definedActor:y(SCREEN_CENTER_Y-p)
+	end}	
+
+	-- Move Z
+	definemod {definedActorName..'_movez', function(p)
+		    definedActor:y(SCREEN_CENTER_Y-p)
+	end}	
+
+end
+
+end)"/>
