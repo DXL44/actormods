@@ -13,6 +13,11 @@ actormods {actor, 'prefix'}
 
 **prefix** - a string to act as the prefix to all mods for that actor
 
+You can do multiple at once to save space, like this:
+
+```lua
+actormods {actor1, 'prefix1', actor2, 'prefix2', actor3, 'prefix3'}
+```
 
 # Using The Mods
 The plugin names all mods for an actor in a "prefix_modname" format. For example, if you do...
